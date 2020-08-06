@@ -1,0 +1,64 @@
+/*header{
+    background: url(/images/20200805_211337_0000.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-color:black;
+}
+@media only screen and(max-width: 640px) {
+    .r4_ul{
+    align-items: center;
+    }
+}
+
+.r4a{
+    font-weight: bold;
+}
+.r4_ul{
+    margin-right: 20em;
+}
+
+
+.r4header{
+    position: relative;
+    display: inline-block; /* Make the width of box same as image 
+}
+.r4banner{
+    width:100%;
+    height:auto;
+}
+.r4text{
+    position: absolute;
+    z-index: 999;
+   margin-bottom: 0 auto;
+    left: 0;
+    right: 0;
+    top: 5%; /* Adjust this value to move the positioned div up and down */
+    /*text-align: center;*/
+  /*  width: 100%;  Set the width of the positioned div 
+}
+.r4nav{
+    background-color:rgba(0,0,0, .1);
+    
+}*/
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+}
+.r4_header_img{
+    width:100%;
+    padding-left:10em;
+}
+@media only screen and (max-width: 992px) {
+    .r4_header_img{
+        padding-left:0em;
+    }
+  }
+.r4header{
+    width: 100%;
+}
+.r4_icon{
+    border-radius: 60px;;
+}
