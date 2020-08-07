@@ -1,43 +1,166 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R4Research</title>
-      <!-- Bootstrap -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-      <!-- stylesheet -->
-      <link rel="stylesheet" href="library/css/style.css" type="text/css">
-</head>
-<body>
-    <header class="r4header">
-        <img src="images/header.png" class="r4banner">
-        <div class="r4text">
-          <nav class="navbar navbar-expand-lg navbar-dark r4nav">
-            <a class="navbar-brand r4a" href="#">R4Research</a>
-            <button class="navbar-toggler white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon white"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto r4_ul">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Downloads</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-        
-            </div>
-          </nav>
-        </div>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="library/js/javascript.js"></script>    
+﻿<!DOCTYPE html>
+<html>
+<title>R4 Research</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- stylesheet -->
+<link rel="stylesheet" href="library/css/style.css" type="text/css">
+<style>
+
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/logo.png" style="width:45%;" class="w3-round w3-circle r4_icon"><br><br>
+    <h4><b>R4 Research</b></h4>
+    <p class="w3-text-grey">ART OF HACKERS</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-home fa-fw w3-margin-right"></i>HOME</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i class="fa fa-user-secret fa-fw w3-margin-right"></i>HACKING</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-code fa-fw w3-margin-right"></i>PROGRAMMING</a> 
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw w3-margin-right"></i>DESIGNING</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cogs fa-fw w3-margin-right"></i>APP DEVELOPMENT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-main"><img src="images/header.png" class="r4_header_img"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio r4_header">
+    <!--<a href="#"><img src="/images/logo.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>-->
+   
+    
+
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>R4 Research</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">RESOURCES </span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-user-secret w3-margin-right"></i>HACKING</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-code w3-margin-right"></i>PROGRAMMING</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-laptop w3-margin-right"></i>DESIGNING</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-cogs w3-margin-right"></i>APP DEVELOPMENT</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/hack.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p class="r4_p"><b><a href="#" class="r4_a">Hacking</a></b></p>
+        <p>Hacking refers to activities that seek to compromise digital devices, such as computers, smartphones, tablets, and even entire networks. Hackers are motivated by personal gain, to make a statement, or just because they can.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/progra.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p class="r4_p"><b><a href="#" class="r4_a">Programming</a></b></p>
+        <p>Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or to perform a specific task.
+          The process of writing computer programs.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/app.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p class="r4_p"><b><a href="#" class="r4_a">App Development</a></b></p>
+        <p>Application development is the name of the profession that employs people who design, develop and deploy these computer applications. Application developers have a computer programming background.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/design.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p class="r4_p"><b><a href="#" class="r4_a">Designing</a></b></p>
+        <p>Software design is the process by which an agent creates a specification of a software artifact, intended to accomplish goals, using a set of primitive components and subject to constraints. ... Software design usually involves problem solving and planning a software solution.</p>
+      </div>
+    </div>
+  
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  
+
+
+  <!-- Footer -->
+  <!--<footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>R4 Research</h3>
+      <p>This website made for my personal use only.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>YouTube</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="images/logo.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">R4 Research</span><br>
+          <span>ART of Hackers</span>
+        </li>
+     
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3></h3>
+      <p>
+       
+      </p>
+    </div>
+
+  </div>
+  </footer>-->
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by ART Agency</div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="library/js/javascript.js"></script> 
+
 </body>
 </html>
